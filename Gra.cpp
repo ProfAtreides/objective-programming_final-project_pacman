@@ -86,7 +86,7 @@ Gra::~Gra()
 void Gra::update()
 {
 	this->pollEvents();
-	Sleep(250);
+	sf::sleep(sf::milliseconds(250));
 	if (iloscGraczy == 1)
 	{
 		if (duch1.czyZjedzony())

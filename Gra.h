@@ -1,15 +1,14 @@
 #pragma once
-#include <SFML\Graphics.hpp>
-#include <SFML\System.hpp>
-#include <SFML\Window.hpp>
-#include <SFML\Audio.hpp>
-#include <a
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Audio.hpp>
 #include "Gracz.h"
 #include <iostream>
-#include <windows.h>
 #include <time.h>
 #include <vector>
 #include "Duch.h"
+
 class Gra
 {
 private:

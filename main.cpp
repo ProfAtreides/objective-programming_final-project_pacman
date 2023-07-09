@@ -2,6 +2,8 @@
 #include <iostream>
 #include "Gracz.h"
 #include "Gra.h"
+#include <chrono>
+#include <thread>
 int main()
 {
 	Gra gra;
@@ -16,7 +18,8 @@ int main()
 			gra.update();
 			//Render
 			gra.render();
+
 		}
-		Sleep(3000);
+        sf::sleep(sf::milliseconds(10000));
 	}
 }

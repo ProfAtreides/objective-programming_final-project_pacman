@@ -1,14 +1,24 @@
-cmake_minimum_required(VERSION 3.23)
-project(objective_programming_final_project_pacman)
+cmake_minimum_required(VERSION 3.22)
+project(program)
 
 set(CMAKE_CXX_STANDARD 14)
 
-
-add_executable(objective_programming_final_project_pacman
+add_executable(program
         Duch.cpp
         Duch.h
         Gra.cpp
         Gra.h
         Gracz.cpp
         Gracz.h
-        "PacMan Dual.cpp")
+        "main.cpp")
+
+find_package(SFML 2.5
+        COMPONENTS
+        system window graphics network audio REQUIRED)
+
+target_include_directories(program
+        PRIVATE "${PROJECT_BINARY_DIR}")
+
+target_link_libraries(program sfml-graphics sfml-window sfml-system sfml-audio)
+
+install(TARGETS program DESTINATION bin)
