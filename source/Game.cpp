@@ -1,10 +1,10 @@
-#include "Gra.h"
-void Gra::inicjalizacjaZmiennych()
+#include "Game.h"
+void Game::inicjalizacjaZmiennych()
 {
 	this->window = nullptr;
 }
 
-void Gra::inicjzalizacjaOkna()
+void Game::inicjzalizacjaOkna()
 {
 	this->videoMode.height = 800;
 	this->videoMode.width = 660;
@@ -35,7 +35,7 @@ void Gra::inicjzalizacjaOkna()
 	duchTexture.loadFromFile("Ghost.png");
 }
 
-void Gra::createGraph()
+void Game::createGraph()
 {
 	for (int i = 0; i < 22; i++)
 	{
@@ -73,17 +73,17 @@ void Gra::createGraph()
 	}
 }
 
-Gra::Gra()
+Game::Game()
 {
 	this->inicjalizacjaZmiennych();
 	this->inicjzalizacjaOkna();
 }
-Gra::~Gra()
+Game::~Game()
 {
 	delete this->window;
 }
 
-void Gra::update()
+void Game::update()
 {
 	this->pollEvents();
 	sf::sleep(sf::milliseconds(250));
@@ -105,31 +105,31 @@ void Gra::update()
 		{
 			Gracz1.skrocWzmocnienieORunde();
 		}
-		Gracz1.Ruch(Mapa);
+        Gracz1.makeMove(Mapa);
 		if (punktyWGrze[Gracz1.getX()][Gracz1.getY()] == 0)
 		{
-			Gracz1.dodajPunkty();
+            Gracz1.addPoints();
 			punktyWGrze[Gracz1.getX()][Gracz1.getY()] = 1;
 			ilePunktowDoZdobycia--;
 		}
 		if (wzmocnienie1Cords.first == Gracz1.getX() && wzmocnienie1Cords.second == Gracz1.getY() && wzmocnienie1)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie1 = false;
 		}
 		if (wzmocnienie2Cords.first == Gracz1.getX() && wzmocnienie2Cords.second == Gracz1.getY() && wzmocnienie2)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie2 = false;
 		}
 		if (wzmocnienie3Cords.first == Gracz1.getX() && wzmocnienie3Cords.second == Gracz1.getY() && wzmocnienie3)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie3 = false;
 		}
 		if (wzmocnienie4Cords.first == Gracz1.getX() && wzmocnienie4Cords.second == Gracz1.getY() && wzmocnienie4)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie4 = false;
 		}
 		if ((duch1.getX() - Gracz1.getX()) * (duch1.getX() - Gracz1.getX()) < 9 && (duch1.getY() - Gracz1.getY()) * (duch1.getY() - Gracz1.getY()) < 9)
@@ -165,7 +165,7 @@ void Gra::update()
 			}
 			if (Gracz1.czyWzmocniony() == false)
 			{
-				Gracz1.Porazka();
+                Gracz1.gameLost();
 			}
 		}
 		if (duch2.zjedzGracza(Gracz1) == true)
@@ -177,7 +177,7 @@ void Gra::update()
 			}
 			if (Gracz1.czyWzmocniony() == false)
 			{
-				Gracz1.Porazka();
+                Gracz1.gameLost();
 			}
 		}
 		if (duch3.zjedzGracza(Gracz1) == true)
@@ -189,7 +189,7 @@ void Gra::update()
 			}
 			if (Gracz1.czyWzmocniony() == false)
 			{
-				Gracz1.Porazka();
+                Gracz1.gameLost();
 			}
 		}
 	}
@@ -215,59 +215,59 @@ void Gra::update()
 		{
 			duch3.zmniejszRundyDoRegenracji();
 		}
-		Gracz1.Ruch(Mapa);
-		Gracz2.Ruch(Mapa);
+        Gracz1.makeMove(Mapa);
+        Gracz2.makeMove(Mapa);
 		if (wzmocnienie1Cords.first == Gracz1.getX() && wzmocnienie1Cords.second == Gracz1.getY() && wzmocnienie1)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie1 = false;
 		}
 		if (wzmocnienie2Cords.first == Gracz1.getX() && wzmocnienie2Cords.second == Gracz1.getY() && wzmocnienie2)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie2 = false;
 		}
 		if (wzmocnienie3Cords.first == Gracz1.getX() && wzmocnienie3Cords.second == Gracz1.getY() && wzmocnienie3)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie3 = false;
 		}
 		if (wzmocnienie4Cords.first == Gracz1.getX() && wzmocnienie4Cords.second == Gracz1.getY() && wzmocnienie4)
 		{
-			Gracz1.wzmocnijGracza();
+            Gracz1.enchance();
 			wzmocnienie4 = false;
 		}
 		if (punktyWGrze[Gracz1.getX()][Gracz1.getY()] == 0)
 		{
-			Gracz1.dodajPunkty();
+            Gracz1.addPoints();
 			punktyWGrze[Gracz1.getX()][Gracz1.getY()] = 1;
 			ilePunktowDoZdobycia--;
 		}
 
 		if (punktyWGrze[Gracz2.getX()][Gracz2.getY()] == 0)
 		{
-			Gracz2.dodajPunkty();
+            Gracz2.addPoints();
 			punktyWGrze[Gracz2.getX()][Gracz2.getY()] = 1;
 			ilePunktowDoZdobycia--;
 		}
 		if (wzmocnienie1Cords.first == Gracz2.getX() && wzmocnienie1Cords.second == Gracz2.getY() && wzmocnienie1)
 		{
-			Gracz2.wzmocnijGracza();
+            Gracz2.enchance();
 			wzmocnienie1 = false;
 		}
 		if (wzmocnienie2Cords.first == Gracz2.getX() && wzmocnienie2Cords.second == Gracz2.getY() && wzmocnienie2)
 		{
-			Gracz2.wzmocnijGracza();
+            Gracz2.enchance();
 			wzmocnienie2 = false;
 		}
 		if (wzmocnienie3Cords.first == Gracz2.getX() && wzmocnienie3Cords.second == Gracz2.getY() && wzmocnienie3)
 		{
-			Gracz2.wzmocnijGracza();
+            Gracz2.enchance();
 			wzmocnienie3 = false;
 		}
 		if (wzmocnienie4Cords.first == Gracz2.getX() && wzmocnienie4Cords.second == Gracz2.getY() && wzmocnienie4)
 		{
-			Gracz2.wzmocnijGracza();
+            Gracz2.enchance();
 			wzmocnienie4 = false;
 		}
 		srand(time(NULL));
@@ -293,7 +293,7 @@ void Gra::update()
 			}
 			if (Gracz1.czyWzmocniony() == false)
 			{
-				Gracz1.Porazka();
+                Gracz1.gameLost();
 			}
 		}
 		if (duch2.zjedzGracza(Gracz1) == true)
@@ -305,7 +305,7 @@ void Gra::update()
 			}
 			if (Gracz1.czyWzmocniony() == false)
 			{
-				Gracz1.Porazka();
+                Gracz1.gameLost();
 			}
 		}
 		if (duch3.zjedzGracza(Gracz1) == true)
@@ -317,7 +317,7 @@ void Gra::update()
 			}
 			if (Gracz1.czyWzmocniony() == false)
 			{
-				Gracz1.Porazka();
+                Gracz1.gameLost();
 			}
 		}
 		if (duch1.zjedzGracza(Gracz2) == true || duch2.zjedzGracza(Gracz2) == true || duch3.zjedzGracza(Gracz2) == true)
@@ -342,7 +342,7 @@ void Gra::update()
 			}
 			if (Gracz2.czyWzmocniony() == false)
 			{
-				Gracz2.Porazka();
+                Gracz2.gameLost();
 			}
 		}
 		if (Gracz1.getX() == Gracz2.getX() && Gracz1.getY() == Gracz2.getY())
@@ -352,18 +352,18 @@ void Gra::update()
 	}
 }
 
-void Gra::render()
+void Game::render()
 {
 	this->window->clear(sf::Color::Black);
 	drawMap();
 	this->window->display();
 }
 
-const bool Gra::getWindowIsOpen() const
+const bool Game::getWindowIsOpen() const
 {
 	return this->window->isOpen();
 }
-void Gra::drawMap()
+void Game::drawMap()
 {
 	sf::Vector2f littleGrid(5, 5);
 	sf::Vector2f mediumGrid(5, 5);
@@ -410,19 +410,19 @@ void Gra::drawMap()
 			{
 				if (Gracz1.czyWzmocniony())
 				{
-					if (Gracz1.zwrocKierunek() == 0)
+					if (Gracz1.getDirection() == 0)
 					{
 						gracz.setTexture(&gracz1WzmocnienieGora);
 					}
-					if (Gracz1.zwrocKierunek() == 1 || Gracz1.zwrocKierunek() == -1)
+					if (Gracz1.getDirection() == 1 || Gracz1.getDirection() == -1)
 					{
 						gracz.setTexture(&gracz1WzmocnieniePrawo);
 					}
-					if (Gracz1.zwrocKierunek() == 2)
+					if (Gracz1.getDirection() == 2)
 					{
 						gracz.setTexture(&gracz1WzmocnienieDol);
 					}
-					if (Gracz1.zwrocKierunek() == 3)
+					if (Gracz1.getDirection() == 3)
 					{
 						gracz.setTexture(&gracz1WzmocnienieLewo);
 					}
@@ -432,19 +432,19 @@ void Gra::drawMap()
 				}
 				else
 				{
-					if (Gracz1.zwrocKierunek() == 0)
+					if (Gracz1.getDirection() == 0)
 					{
 						gracz.setTexture(&gracz1Gora);
 					}
-					if (Gracz1.zwrocKierunek() == 1 || Gracz1.zwrocKierunek() == -1)
+					if (Gracz1.getDirection() == 1 || Gracz1.getDirection() == -1)
 					{
 						gracz.setTexture(&gracz1Prawo);
 					}
-					if (Gracz1.zwrocKierunek() == 2)
+					if (Gracz1.getDirection() == 2)
 					{
 						gracz.setTexture(&gracz1Dol);
 					}
-					if (Gracz1.zwrocKierunek() == 3)
+					if (Gracz1.getDirection() == 3)
 					{
 						gracz.setTexture(&gracz1Lewo);
 					}
@@ -459,19 +459,19 @@ void Gra::drawMap()
 				{
 					if (Gracz2.czyWzmocniony())
 					{
-						if (Gracz2.zwrocKierunek() == 0)
+						if (Gracz2.getDirection() == 0)
 						{
 							gracz.setTexture(&gracz2WzmocnienieGora);
 						}
-						if (Gracz2.zwrocKierunek() == 1 || Gracz2.zwrocKierunek() == -1)
+						if (Gracz2.getDirection() == 1 || Gracz2.getDirection() == -1)
 						{
 							gracz.setTexture(&gracz2WzmocnieniePrawo);
 						}
-						if (Gracz2.zwrocKierunek() == 2)
+						if (Gracz2.getDirection() == 2)
 						{
 							gracz.setTexture(&gracz2WzmocnienieDol);
 						}
-						if (Gracz2.zwrocKierunek() == 3)
+						if (Gracz2.getDirection() == 3)
 						{
 							gracz.setTexture(&gracz2WzmocnienieLewo);
 						}
@@ -481,19 +481,19 @@ void Gra::drawMap()
 					}
 					else
 					{
-						if (Gracz2.zwrocKierunek() == 0)
+						if (Gracz2.getDirection() == 0)
 						{
 							gracz.setTexture(&gracz2Gora);
 						}
-						if (Gracz2.zwrocKierunek() == 1 || Gracz2.zwrocKierunek() == -1)
+						if (Gracz2.getDirection() == 1 || Gracz2.getDirection() == -1)
 						{
 							gracz.setTexture(&gracz2Prawo);
 						}
-						if (Gracz2.zwrocKierunek() == 2)
+						if (Gracz2.getDirection() == 2)
 						{
 							gracz.setTexture(&gracz2Dol);
 						}
-						if (Gracz2.zwrocKierunek() == 3)
+						if (Gracz2.getDirection() == 3)
 						{
 							gracz.setTexture(&gracz2Lewo);
 						}
@@ -529,16 +529,16 @@ void Gra::drawMap()
 		}
 	}
 	text.setPosition(0, 19 * 30);
-	text.setString("Gracz1:" + Gracz1.pokazPunktyString());
+	text.setString("Gracz1:" + Gracz1.pointsToString());
 	this->window->draw(text);
 	if (iloscGraczy == 2)
 	{
-		text.setString("Gracz2:" + Gracz2.pokazPunktyString());
+		text.setString("Gracz2:" + Gracz2.pointsToString());
 		text.setPosition(528, 30 * 19);
 		this->window->draw(text);
 	}
 }
-void Gra::pollEvents()
+void Game::pollEvents()
 {
 	while (this->window->pollEvent(this->ev))
 	{
@@ -549,49 +549,49 @@ void Gra::pollEvents()
 		case sf::Event::KeyPressed:
 			if (ev.key.code == sf::Keyboard::D)
 			{
-				Gracz1.zmienKierunek('d', Mapa);
+                Gracz1.changeDirections('d', Mapa);
 				//	std::cout << "d" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::A)
 			{
-				Gracz1.zmienKierunek('a', Mapa);
+                Gracz1.changeDirections('a', Mapa);
 				//	std::cout << "a" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::W)
 			{
-				Gracz1.zmienKierunek('w', Mapa);
+                Gracz1.changeDirections('w', Mapa);
 				//	std::cout << "w" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::S)
 			{
-				Gracz1.zmienKierunek('s', Mapa);
+                Gracz1.changeDirections('s', Mapa);
 				//	std::cout << "s" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::Right)
 			{
-				Gracz2.zmienKierunek('d', Mapa);
+                Gracz2.changeDirections('d', Mapa);
 				//	std::cout << "RIGHT" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::Left)
 			{
-				Gracz2.zmienKierunek('a', Mapa);
+                Gracz2.changeDirections('a', Mapa);
 				//	std::cout << "LEFT" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::Up)
 			{
-				Gracz2.zmienKierunek('w', Mapa);
+                Gracz2.changeDirections('w', Mapa);
 				//	std::cout << "UP" << " ";
 			}
 			if (ev.key.code == sf::Keyboard::Down)
 			{
-				Gracz2.zmienKierunek('s', Mapa);
+                Gracz2.changeDirections('s', Mapa);
 				//	std::cout << "DOWN" << " ";
 			}
 		}
 	}
 }
 
-void Gra::wyborIlosciGraczy()
+void Game::wyborIlosciGraczy()
 {
 	iloscGraczy = 0;
 	this->window->clear(sf::Color::Black);
@@ -619,7 +619,7 @@ void Gra::wyborIlosciGraczy()
 	}
 }
 
-void Gra::utworzGre()
+void Game::utworzGre()
 {
 	wzmocnienie1 = true;
 	wzmocnienie2 = true;
@@ -658,7 +658,7 @@ void Gra::utworzGre()
 	}
 }
 
-bool Gra::koniecGry()
+bool Game::koniecGry()
 {
 	if (walka != -1)
 	{
@@ -673,7 +673,7 @@ bool Gra::koniecGry()
 		if (walka == 1)
 		{
 			text.setPosition(253, 30 * 19);
-			text.setString("Gracz 1 wygral");
+			text.setString("Player 1 wygral");
 			this->window->draw(text);
 			this->window->display();
 			return 1;
@@ -681,7 +681,7 @@ bool Gra::koniecGry()
 		if (walka == 2)
 		{
 			text.setPosition(253, 30 * 19);
-			text.setString("Gracz 2 wygral");
+			text.setString("Player 2 wygral");
 			this->window->draw(text);
 			this->window->display();
 			return 1;
@@ -699,18 +699,18 @@ bool Gra::koniecGry()
 		}
 		else
 		{
-			if (Gracz1.pokazPunktyInt() > Gracz2.pokazPunktyInt())
+			if (Gracz1.getPoints() > Gracz2.getPoints())
 			{
 				text.setPosition(253, 30 * 19);
-				text.setString("Gracz 1 wygral");
+				text.setString("Player 1 wygral");
 				this->window->draw(text);
 				this->window->display();
 				return 1;
 			}
-			else if (Gracz2.pokazPunktyInt() > Gracz1.pokazPunktyInt())
+			else if (Gracz2.getPoints() > Gracz1.getPoints())
 			{
 				text.setPosition(253, 30 * 19);
-				text.setString("Gracz 2 wygral");
+				text.setString("Player 2 wygral");
 				this->window->draw(text);
 				this->window->display();
 				return 1;
@@ -727,7 +727,7 @@ bool Gra::koniecGry()
 	}
 	if (iloscGraczy == 1)
 	{
-		if (Gracz1.wGrze() == 0)
+		if (Gracz1.alive() == 0)
 		{
 			text.setPosition(275, 30 * 19);
 			text.setString("Przegrales");
@@ -738,18 +738,18 @@ bool Gra::koniecGry()
 	}
 	else
 	{
-		if (Gracz1.wGrze() == 0)
+		if (Gracz1.alive() == 0)
 		{
 			text.setPosition(253, 30 * 19);
-			text.setString("Gracz 2 wygral");
+			text.setString("Player 2 wygral");
 			this->window->draw(text);
 			this->window->display();
 			return true;
 		}
-		if (Gracz2.wGrze() == 0)
+		if (Gracz2.alive() == 0)
 		{
 			text.setPosition(253, 30 * 19);
-			text.setString("Gracz 1 wygral");
+			text.setString("Player 1 wygral");
 			this->window->draw(text);
 			this->window->display();
 			return true;
@@ -758,7 +758,7 @@ bool Gra::koniecGry()
 
 	return false;
 }
-int Gra::walkaPacmanow()//0-dwojka graczy przegrywa//1-gracz pierwszy wygrywa//2-gracz drugi wygyrwa
+int Game::walkaPacmanow()//0-dwojka graczy przegrywa//1-gracz pierwszy wygrywa//2-gracz drugi wygyrwa
 {
 	if (Gracz1.czyWzmocniony() == Gracz2.czyWzmocniony())
 	{

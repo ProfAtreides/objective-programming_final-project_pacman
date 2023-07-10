@@ -1,0 +1,7 @@
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/program.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/edit_cache.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/rebuild_cache.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/list_install_components.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/install.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/install/local.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/build/CMakeFiles/install/strip.dir

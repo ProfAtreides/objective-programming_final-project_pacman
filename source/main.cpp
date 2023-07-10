@@ -1,12 +1,13 @@
 ﻿#include <vector>
 #include <iostream>
-#include "Gracz.h"
-#include "Gra.h"
+#include "Player.h"
+#include "Game.h"
 #include <chrono>
 #include <thread>
+
 int main()
 {
-	Gra gra;
+	Game gra;
 	gra.createGraph();
 	while (gra.getWindowIsOpen())
 	{

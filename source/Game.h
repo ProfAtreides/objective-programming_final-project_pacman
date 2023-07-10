@@ -3,13 +3,13 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
-#include "Gracz.h"
+#include "Player.h"
 #include <iostream>
 #include <time.h>
 #include <vector>
-#include "Duch.h"
+#include "Ghost.h"
 
-class Gra
+class Game
 {
 private:
 	sf::Texture gracz1Gora;
@@ -91,11 +91,11 @@ private:
 	int walka = -1;
 	std::vector <std::pair<int, int>> Krawedzie[22][19];
 	int iloscGraczy = 0;
-	Gracz Gracz1;
-	Gracz Gracz2;
-	Duch duch1;
-	Duch duch2;
-	Duch duch3;
+	Player Gracz1;
+	Player Gracz2;
+	Ghost duch1;
+	Ghost duch2;
+	Ghost duch3;
 	sf::RenderWindow* window;
 	sf::VideoMode videoMode;
 	sf::Event ev;
@@ -115,8 +115,8 @@ public:
 	void wyborIlosciGraczy();
 	void utworzGre();
 	void createGraph();
-	Gra();
-	virtual ~Gra();
+	Game();
+	virtual ~Game();
 	void update();
 	void render();
 	void drawMap();

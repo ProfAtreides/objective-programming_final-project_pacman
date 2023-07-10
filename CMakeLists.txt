@@ -4,13 +4,13 @@ project(program)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(program
-        Duch.cpp
-        Duch.h
-        Gra.cpp
-        Gra.h
-        Gracz.cpp
-        Gracz.h
-        "main.cpp")
+        source/Ghost.cpp
+        source/Ghost.h
+        source/Game.cpp
+        source/Game.h
+        source/Player.cpp
+        source/Player.h
+        "source/main.cpp" source/Direction.h source/State.h source/Enhancement.cpp source/Enhancement.h source/Point.cpp source/Point.h)
 
 find_package(SFML 2.5
         COMPONENTS

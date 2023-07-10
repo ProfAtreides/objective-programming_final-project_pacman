@@ -1,5 +1,5 @@
-#include "Duch.h"
-void Duch::zmniejszRundyDoRegenracji()
+#include "Ghost.h"
+void Ghost::zmniejszRundyDoRegenracji()
 {
 	if (ileRundDoRegenracjiPoZjedzeniu > 0)
 	{
@@ -10,7 +10,7 @@ void Duch::zmniejszRundyDoRegenracji()
 		zjedzony = false;
 	}
 }
-bool Duch::czyZjedzonyPrzezGracza()
+bool Ghost::czyZjedzonyPrzezGracza()
 {
 	if (zjedzony)
 	{
@@ -21,13 +21,13 @@ bool Duch::czyZjedzonyPrzezGracza()
 		return false;
 	}
 }
-void Duch::ustawKordy(int x_set, int y_set)
+void Ghost::ustawKordy(int x_set, int y_set)
 {
 	x = x_set;
 	y = y_set;
 }
 
-void Duch::poscig(std::vector < std::pair<int, int>>Krawedzie[22][19], Gracz scigany)
+void Ghost::poscig(std::vector < std::pair<int, int>>Krawedzie[22][19], Player scigany)
 {
 	bool usedGrids[22][19] =
 	{
@@ -109,7 +109,7 @@ void Duch::poscig(std::vector < std::pair<int, int>>Krawedzie[22][19], Gracz sci
 	}
 }
 
-void Duch::ruchLosowy(std::vector <std::pair<int, int >> mozliweRuchy)
+void Ghost::ruchLosowy(std::vector <std::pair<int, int >> mozliweRuchy)
 {
 	srand(time(NULL));
 	int pom = rand();
@@ -141,7 +141,7 @@ void Duch::ruchLosowy(std::vector <std::pair<int, int >> mozliweRuchy)
 		y = mozliweRuchy[seed].second;
 	}
 }
-void Duch::ruch(std::vector<std::pair<int, int>> Krawedzie[22][19], Gracz scigany)
+void Ghost::ruch(std::vector<std::pair<int, int>> Krawedzie[22][19], Player scigany)
 {
 	if (zjedzony == false)
 	{
@@ -164,11 +164,11 @@ void Duch::ruch(std::vector<std::pair<int, int>> Krawedzie[22][19], Gracz scigan
 		}
 	}
 }
-int Duch::getX()
+int Ghost::getX()
 {
 	return x;
 }
-void Duch::dodajDucha(int x_pom, int y_pom)
+void Ghost::dodajDucha(int x_pom, int y_pom)
 {
 	x_start = x_pom;
 	y_start = y_pom;
@@ -176,7 +176,7 @@ void Duch::dodajDucha(int x_pom, int y_pom)
 	x = x_start;
 	zjedzony = false;
 }
-bool Duch::zjedzGracza(Gracz scigany)
+bool Ghost::zjedzGracza(Player scigany)
 {
 	if (scigany.getX() == x && scigany.getY() == y)
 	{
@@ -187,18 +187,18 @@ bool Duch::zjedzGracza(Gracz scigany)
 		return 0;
 	}
 }
-int Duch::getY()
+int Ghost::getY()
 {
 	return y;
 }
 
-void Duch::zjedzonyPrzezGracza()
+void Ghost::zjedzonyPrzezGracza()
 {
 	ileRundDoRegenracjiPoZjedzeniu = 8;
 	ustawKordy(x_start, y_start);
 	zjedzony = true;
 }
-bool Duch::czyZjedzony()
+bool Ghost::czyZjedzony()
 {
 	return zjedzony;
 }
