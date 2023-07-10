@@ -9,7 +9,7 @@ class Player
 private:
 	std::pair<int,int> mPosition;
     std::pair<int,int> mLastPosition;
-;
+
 	int mNumber; // TODO determine if actually needed
 	int mPoints;
 

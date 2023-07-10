@@ -3,7 +3,7 @@
 Player::Player(std::pair <int,int> startPosition, int playerNumber)
 {
     this->mPosition = startPosition;
-    this->mLastPosition = nullptr;
+    this->mLastPosition = startPosition;
     this->mDirection = STANDING;
     this->mNextDirection = STANDING;
     this->mNumber = playerNumber;
