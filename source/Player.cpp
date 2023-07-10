@@ -1,6 +1,6 @@
 #include "Player.h"
 
-Player::Player(std::pair <int,int> startPosition, int playerNumber)
+Player::Player(std::pair <int,int> startPosition, int playerNumber, std::string path)
 {
     this->mPosition = startPosition;
     this->mLastPosition = startPosition;
@@ -9,6 +9,7 @@ Player::Player(std::pair <int,int> startPosition, int playerNumber)
     this->mNumber = playerNumber;
     this->mPoints = 0;
     this->pEnhancement = nullptr;
+    this->mTexture.loadFromFile(path);
 }
 
 void Player::changeDirections(Direction tempDirection, bool Map[22][19])
@@ -74,12 +75,12 @@ int Player::getPoints()
 }
 
 void Player::assignEnhancement(Enhancement *enhancement) {
-
+    this->pEnhancement = enhancement;
 }
 
 bool Player::getEnhancementStatus()
 {
-
+    return (pEnhancement == nullptr);
 }
 
 Direction Player::getDirection()
@@ -93,4 +94,9 @@ std::pair<int, int> Player::getPosition() {
 
 std::pair<int, int> Player::getLastPosition() {
     return mLastPosition;
+}
+
+void Player::loadTexture(std::string path)
+{
+    mTexture.loadFromFile(path);
 }
