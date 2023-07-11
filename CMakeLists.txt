@@ -10,7 +10,7 @@ add_executable(program
         source/Game.h
         source/Player.cpp
         source/Player.h
-        "source/main.cpp" source/Direction.h source/State.h source/Enhancement.cpp source/Enhancement.h source/Point.cpp source/Point.h)
+        "source/main.cpp" source/Direction.h source/State.h source/Enhancement.cpp source/Enhancement.h source/Point.cpp source/Point.h source/WindowHandler.cpp source/WindowHandler.h source/Map.cpp source/Map.h)
 
 find_package(SFML 2.5
         COMPONENTS

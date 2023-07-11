@@ -246,6 +246,30 @@ source/Ghost.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Ghost.cpp.s
 .PHONY : source/Ghost.cpp.s
 
+source/Map.o: source/Map.cpp.o
+.PHONY : source/Map.o
+
+# target to build an object file
+source/Map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Map.cpp.o
+.PHONY : source/Map.cpp.o
+
+source/Map.i: source/Map.cpp.i
+.PHONY : source/Map.i
+
+# target to preprocess a source file
+source/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Map.cpp.i
+.PHONY : source/Map.cpp.i
+
+source/Map.s: source/Map.cpp.s
+.PHONY : source/Map.s
+
+# target to generate assembly for a file
+source/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Map.cpp.s
+.PHONY : source/Map.cpp.s
+
 source/Player.o: source/Player.cpp.o
 .PHONY : source/Player.o
 
@@ -294,6 +318,30 @@ source/Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Point.cpp.s
 .PHONY : source/Point.cpp.s
 
+source/WindowHandler.o: source/WindowHandler.cpp.o
+.PHONY : source/WindowHandler.o
+
+# target to build an object file
+source/WindowHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/WindowHandler.cpp.o
+.PHONY : source/WindowHandler.cpp.o
+
+source/WindowHandler.i: source/WindowHandler.cpp.i
+.PHONY : source/WindowHandler.i
+
+# target to preprocess a source file
+source/WindowHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/WindowHandler.cpp.i
+.PHONY : source/WindowHandler.cpp.i
+
+source/WindowHandler.s: source/WindowHandler.cpp.s
+.PHONY : source/WindowHandler.s
+
+# target to generate assembly for a file
+source/WindowHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/WindowHandler.cpp.s
+.PHONY : source/WindowHandler.cpp.s
+
 source/main.o: source/main.cpp.o
 .PHONY : source/main.o
 
@@ -340,12 +388,18 @@ help:
 	@echo "... source/Ghost.o"
 	@echo "... source/Ghost.i"
 	@echo "... source/Ghost.s"
+	@echo "... source/Map.o"
+	@echo "... source/Map.i"
+	@echo "... source/Map.s"
 	@echo "... source/Player.o"
 	@echo "... source/Player.i"
 	@echo "... source/Player.s"
 	@echo "... source/Point.o"
 	@echo "... source/Point.i"
 	@echo "... source/Point.s"
+	@echo "... source/WindowHandler.o"
+	@echo "... source/WindowHandler.i"
+	@echo "... source/WindowHandler.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

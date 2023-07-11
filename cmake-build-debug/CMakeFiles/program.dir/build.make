@@ -153,6 +153,34 @@ CMakeFiles/program.dir/source/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/source/Point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Point.cpp -o CMakeFiles/program.dir/source/Point.cpp.s
 
+CMakeFiles/program.dir/source/WindowHandler.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/source/WindowHandler.cpp.o: /home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.cpp
+CMakeFiles/program.dir/source/WindowHandler.cpp.o: CMakeFiles/program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/program.dir/source/WindowHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/program.dir/source/WindowHandler.cpp.o -MF CMakeFiles/program.dir/source/WindowHandler.cpp.o.d -o CMakeFiles/program.dir/source/WindowHandler.cpp.o -c /home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.cpp
+
+CMakeFiles/program.dir/source/WindowHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/source/WindowHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.cpp > CMakeFiles/program.dir/source/WindowHandler.cpp.i
+
+CMakeFiles/program.dir/source/WindowHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/source/WindowHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.cpp -o CMakeFiles/program.dir/source/WindowHandler.cpp.s
+
+CMakeFiles/program.dir/source/Map.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/source/Map.cpp.o: /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.cpp
+CMakeFiles/program.dir/source/Map.cpp.o: CMakeFiles/program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/program.dir/source/Map.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/program.dir/source/Map.cpp.o -MF CMakeFiles/program.dir/source/Map.cpp.o.d -o CMakeFiles/program.dir/source/Map.cpp.o -c /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.cpp
+
+CMakeFiles/program.dir/source/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/source/Map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.cpp > CMakeFiles/program.dir/source/Map.cpp.i
+
+CMakeFiles/program.dir/source/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/source/Map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.cpp -o CMakeFiles/program.dir/source/Map.cpp.s
+
 # Object files for target program
 program_OBJECTS = \
 "CMakeFiles/program.dir/source/Ghost.cpp.o" \
@@ -160,7 +188,9 @@ program_OBJECTS = \
 "CMakeFiles/program.dir/source/Player.cpp.o" \
 "CMakeFiles/program.dir/source/main.cpp.o" \
 "CMakeFiles/program.dir/source/Enhancement.cpp.o" \
-"CMakeFiles/program.dir/source/Point.cpp.o"
+"CMakeFiles/program.dir/source/Point.cpp.o" \
+"CMakeFiles/program.dir/source/WindowHandler.cpp.o" \
+"CMakeFiles/program.dir/source/Map.cpp.o"
 
 # External object files for target program
 program_EXTERNAL_OBJECTS =
@@ -171,13 +201,15 @@ program: CMakeFiles/program.dir/source/Player.cpp.o
 program: CMakeFiles/program.dir/source/main.cpp.o
 program: CMakeFiles/program.dir/source/Enhancement.cpp.o
 program: CMakeFiles/program.dir/source/Point.cpp.o
+program: CMakeFiles/program.dir/source/WindowHandler.cpp.o
+program: CMakeFiles/program.dir/source/Map.cpp.o
 program: CMakeFiles/program.dir/build.make
 program: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 program: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 program: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 program: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 program: CMakeFiles/program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable program"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

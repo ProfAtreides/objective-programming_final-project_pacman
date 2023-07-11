@@ -145,6 +145,12 @@
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Ghost.h">
 			<Option target="program"/>
 		</Unit>
+		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.cpp">
+			<Option target="program"/>
+		</Unit>
+		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.h">
+			<Option target="program"/>
+		</Unit>
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Player.cpp">
 			<Option target="program"/>
 		</Unit>
@@ -158,6 +164,12 @@
 			<Option target="program"/>
 		</Unit>
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/State.h">
+			<Option target="program"/>
+		</Unit>
+		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.cpp">
+			<Option target="program"/>
+		</Unit>
+		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.h">
 			<Option target="program"/>
 		</Unit>
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/main.cpp">
