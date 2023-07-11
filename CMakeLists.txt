@@ -13,7 +13,9 @@ add_executable(everything
         source/Player.h
         "source/main.cpp" source/Direction.h source/State.h source/Enhancement.cpp source/Enhancement.h source/Point.cpp source/Point.h source/WindowHandler.cpp source/WindowHandler.h source/Map.cpp source/Map.h)
 
-add_executable(currentTest source/WindowHandler.h source/WindowHandler.cpp source/main.cpp)
+add_executable(currentTest source/WindowHandler.h source/WindowHandler.cpp
+                            source/Map.h source/Map.cpp
+        source/main.cpp)
 
 find_package(SFML 2.5
         COMPONENTS

@@ -83,7 +83,7 @@ clean: CMakeFiles/currentTest.dir/clean
 CMakeFiles/everything.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12 "Built target everything"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13 "Built target everything"
 .PHONY : CMakeFiles/everything.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,12 +109,12 @@ CMakeFiles/everything.dir/clean:
 CMakeFiles/currentTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target currentTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target currentTest"
 .PHONY : CMakeFiles/currentTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/currentTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/currentTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/currentTest.dir/rule

@@ -193,9 +193,11 @@
 		</Unit>
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.cpp">
 			<Option target="everything"/>
+			<Option target="currentTest"/>
 		</Unit>
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.h">
 			<Option target="everything"/>
+			<Option target="currentTest"/>
 		</Unit>
 		<Unit filename="/home/paro/CLionProjects/objective-programming_final-project_pacman/source/Player.cpp">
 			<Option target="everything"/>

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/currentTest.dir/source/Map.cpp.o"
+  "CMakeFiles/currentTest.dir/source/Map.cpp.o.d"
   "CMakeFiles/currentTest.dir/source/WindowHandler.cpp.o"
   "CMakeFiles/currentTest.dir/source/WindowHandler.cpp.o.d"
   "CMakeFiles/currentTest.dir/source/main.cpp.o"

@@ -3,6 +3,7 @@ CMakeFiles/currentTest.dir/source/main.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/paro/CLionProjects/objective-programming_final-project_pacman/source/WindowHandler.h \
  /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Map.h \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
  /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
@@ -181,7 +182,7 @@ CMakeFiles/currentTest.dir/source/main.cpp.o: \
  /usr/include/SFML/System/Vector2.hpp \
  /usr/include/SFML/System/Vector2.inl \
  /usr/include/SFML/System/Vector3.hpp \
- /usr/include/SFML/System/Vector3.inl /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System/Vector3.inl \
  /usr/include/SFML/Window/Clipboard.hpp \
  /usr/include/SFML/Window/Export.hpp /usr/include/SFML/Window/Context.hpp \
  /usr/include/SFML/Window/GlResource.hpp \
@@ -196,7 +197,7 @@ CMakeFiles/currentTest.dir/source/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/SFML/Window/Window.hpp \
  /usr/include/SFML/Window/WindowHandle.hpp \
- /usr/include/SFML/Window/WindowStyle.hpp /usr/include/SFML/Graphics.hpp \
+ /usr/include/SFML/Window/WindowStyle.hpp \
  /usr/include/SFML/Graphics/BlendMode.hpp \
  /usr/include/SFML/Graphics/Export.hpp \
  /usr/include/SFML/Graphics/CircleShape.hpp \
@@ -228,8 +229,15 @@ CMakeFiles/currentTest.dir/source/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/SFML/Audio.hpp \
- /usr/include/SFML/Audio/InputSoundFile.hpp \
+ /usr/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Point.h \
+ /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Ghost.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Player.h \
+ /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Direction.h \
+ /home/paro/CLionProjects/objective-programming_final-project_pacman/source/Enhancement.h \
+ /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
  /usr/include/SFML/Audio/Export.hpp /usr/include/SFML/Audio/Listener.hpp \
  /usr/include/SFML/Audio/Music.hpp \
  /usr/include/SFML/Audio/SoundStream.hpp \

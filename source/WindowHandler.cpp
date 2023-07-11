@@ -29,6 +29,30 @@ const bool WindowHandler::getWindowIsOpen() const {
 
 void WindowHandler::drawGameMap(Map *map) {
 
+    Vector2f smallGrid(5, 5);
+    RectangleShape point(smallGrid);
+    sf::Vector2f largeGrid(30, 30);
+    sf::RectangleShape wall(largeGrid);
+    wall.setTexture(&(map->getMTextureWall()));
+    point.setTexture(&(map->getMTexturePoint()));
+
+    for(int i = 0; i < 22;i++)
+    {
+        for(int j = 0; j < 19;j++)
+        {
+            if(map->wallAtPosition(std::make_pair(i,j)))
+            {
+                wall.setPosition(i * 30, j * 30);
+                this->mWindow->draw(wall);
+                continue;
+            }
+            if(map->pointAtPosition(std::make_pair(i,j)))
+            {
+                point.setPosition((i * 30) + 14, (j * 30) + 14);
+                this->mWindow->draw(point);
+            }
+        }
+    }
 }
 
 void WindowHandler::render(Map* map) {

@@ -265,6 +265,7 @@ source/Map.o: source/Map.cpp.o
 # target to build an object file
 source/Map.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/Map.cpp.o
 .PHONY : source/Map.cpp.o
 
 source/Map.i: source/Map.cpp.i
@@ -273,6 +274,7 @@ source/Map.i: source/Map.cpp.i
 # target to preprocess a source file
 source/Map.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/Map.cpp.i
 .PHONY : source/Map.cpp.i
 
 source/Map.s: source/Map.cpp.s
@@ -281,6 +283,7 @@ source/Map.s: source/Map.cpp.s
 # target to generate assembly for a file
 source/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/Map.cpp.s
 .PHONY : source/Map.cpp.s
 
 source/Player.o: source/Player.cpp.o
