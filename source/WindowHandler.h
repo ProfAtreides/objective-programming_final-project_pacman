@@ -22,8 +22,8 @@ public:
     void drawGameMap(Map* map); // TODO will be implemented alongside Map class
     void render(Map* map);
 private:
-    const int WIDTH = 800;
-    const int HEIGHT = 660;
+    const int WIDTH = 660;
+    const int HEIGHT = 800;
     Font mFont;
     Color mBackGroundColor;
     Text mText;
