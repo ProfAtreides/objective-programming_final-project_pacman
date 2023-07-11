@@ -162,24 +162,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named program
+# Target rules for targets named everything
 
 # Build rule for target.
-program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program
-.PHONY : program
+everything: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 everything
+.PHONY : everything
 
 # fast build rule for target.
-program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
-.PHONY : program/fast
+everything/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/build
+.PHONY : everything/fast
+
+#=============================================================================
+# Target rules for targets named currentTest
+
+# Build rule for target.
+currentTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 currentTest
+.PHONY : currentTest
+
+# fast build rule for target.
+currentTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/build
+.PHONY : currentTest/fast
 
 source/Enhancement.o: source/Enhancement.cpp.o
 .PHONY : source/Enhancement.o
 
 # target to build an object file
 source/Enhancement.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Enhancement.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Enhancement.cpp.o
 .PHONY : source/Enhancement.cpp.o
 
 source/Enhancement.i: source/Enhancement.cpp.i
@@ -187,7 +200,7 @@ source/Enhancement.i: source/Enhancement.cpp.i
 
 # target to preprocess a source file
 source/Enhancement.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Enhancement.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Enhancement.cpp.i
 .PHONY : source/Enhancement.cpp.i
 
 source/Enhancement.s: source/Enhancement.cpp.s
@@ -195,7 +208,7 @@ source/Enhancement.s: source/Enhancement.cpp.s
 
 # target to generate assembly for a file
 source/Enhancement.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Enhancement.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Enhancement.cpp.s
 .PHONY : source/Enhancement.cpp.s
 
 source/Game.o: source/Game.cpp.o
@@ -203,7 +216,7 @@ source/Game.o: source/Game.cpp.o
 
 # target to build an object file
 source/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Game.cpp.o
 .PHONY : source/Game.cpp.o
 
 source/Game.i: source/Game.cpp.i
@@ -211,7 +224,7 @@ source/Game.i: source/Game.cpp.i
 
 # target to preprocess a source file
 source/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Game.cpp.i
 .PHONY : source/Game.cpp.i
 
 source/Game.s: source/Game.cpp.s
@@ -219,7 +232,7 @@ source/Game.s: source/Game.cpp.s
 
 # target to generate assembly for a file
 source/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Game.cpp.s
 .PHONY : source/Game.cpp.s
 
 source/Ghost.o: source/Ghost.cpp.o
@@ -227,7 +240,7 @@ source/Ghost.o: source/Ghost.cpp.o
 
 # target to build an object file
 source/Ghost.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Ghost.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Ghost.cpp.o
 .PHONY : source/Ghost.cpp.o
 
 source/Ghost.i: source/Ghost.cpp.i
@@ -235,7 +248,7 @@ source/Ghost.i: source/Ghost.cpp.i
 
 # target to preprocess a source file
 source/Ghost.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Ghost.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Ghost.cpp.i
 .PHONY : source/Ghost.cpp.i
 
 source/Ghost.s: source/Ghost.cpp.s
@@ -243,7 +256,7 @@ source/Ghost.s: source/Ghost.cpp.s
 
 # target to generate assembly for a file
 source/Ghost.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Ghost.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Ghost.cpp.s
 .PHONY : source/Ghost.cpp.s
 
 source/Map.o: source/Map.cpp.o
@@ -251,7 +264,7 @@ source/Map.o: source/Map.cpp.o
 
 # target to build an object file
 source/Map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Map.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Map.cpp.o
 .PHONY : source/Map.cpp.o
 
 source/Map.i: source/Map.cpp.i
@@ -259,7 +272,7 @@ source/Map.i: source/Map.cpp.i
 
 # target to preprocess a source file
 source/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Map.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Map.cpp.i
 .PHONY : source/Map.cpp.i
 
 source/Map.s: source/Map.cpp.s
@@ -267,7 +280,7 @@ source/Map.s: source/Map.cpp.s
 
 # target to generate assembly for a file
 source/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Map.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Map.cpp.s
 .PHONY : source/Map.cpp.s
 
 source/Player.o: source/Player.cpp.o
@@ -275,7 +288,7 @@ source/Player.o: source/Player.cpp.o
 
 # target to build an object file
 source/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Player.cpp.o
 .PHONY : source/Player.cpp.o
 
 source/Player.i: source/Player.cpp.i
@@ -283,7 +296,7 @@ source/Player.i: source/Player.cpp.i
 
 # target to preprocess a source file
 source/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Player.cpp.i
 .PHONY : source/Player.cpp.i
 
 source/Player.s: source/Player.cpp.s
@@ -291,7 +304,7 @@ source/Player.s: source/Player.cpp.s
 
 # target to generate assembly for a file
 source/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Player.cpp.s
 .PHONY : source/Player.cpp.s
 
 source/Point.o: source/Point.cpp.o
@@ -299,7 +312,7 @@ source/Point.o: source/Point.cpp.o
 
 # target to build an object file
 source/Point.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Point.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Point.cpp.o
 .PHONY : source/Point.cpp.o
 
 source/Point.i: source/Point.cpp.i
@@ -307,7 +320,7 @@ source/Point.i: source/Point.cpp.i
 
 # target to preprocess a source file
 source/Point.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Point.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Point.cpp.i
 .PHONY : source/Point.cpp.i
 
 source/Point.s: source/Point.cpp.s
@@ -315,7 +328,7 @@ source/Point.s: source/Point.cpp.s
 
 # target to generate assembly for a file
 source/Point.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/Point.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/Point.cpp.s
 .PHONY : source/Point.cpp.s
 
 source/WindowHandler.o: source/WindowHandler.cpp.o
@@ -323,7 +336,8 @@ source/WindowHandler.o: source/WindowHandler.cpp.o
 
 # target to build an object file
 source/WindowHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/WindowHandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/WindowHandler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/WindowHandler.cpp.o
 .PHONY : source/WindowHandler.cpp.o
 
 source/WindowHandler.i: source/WindowHandler.cpp.i
@@ -331,7 +345,8 @@ source/WindowHandler.i: source/WindowHandler.cpp.i
 
 # target to preprocess a source file
 source/WindowHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/WindowHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/WindowHandler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/WindowHandler.cpp.i
 .PHONY : source/WindowHandler.cpp.i
 
 source/WindowHandler.s: source/WindowHandler.cpp.s
@@ -339,7 +354,8 @@ source/WindowHandler.s: source/WindowHandler.cpp.s
 
 # target to generate assembly for a file
 source/WindowHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/WindowHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/WindowHandler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/WindowHandler.cpp.s
 .PHONY : source/WindowHandler.cpp.s
 
 source/main.o: source/main.cpp.o
@@ -347,7 +363,8 @@ source/main.o: source/main.cpp.o
 
 # target to build an object file
 source/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/main.cpp.o
 .PHONY : source/main.cpp.o
 
 source/main.i: source/main.cpp.i
@@ -355,7 +372,8 @@ source/main.i: source/main.cpp.i
 
 # target to preprocess a source file
 source/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/main.cpp.i
 .PHONY : source/main.cpp.i
 
 source/main.s: source/main.cpp.s
@@ -363,7 +381,8 @@ source/main.s: source/main.cpp.s
 
 # target to generate assembly for a file
 source/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/source/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/source/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
 # Help Target
@@ -378,7 +397,8 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... program"
+	@echo "... currentTest"
+	@echo "... everything"
 	@echo "... source/Enhancement.o"
 	@echo "... source/Enhancement.i"
 	@echo "... source/Enhancement.s"

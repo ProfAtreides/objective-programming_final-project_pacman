@@ -1,4 +1,5 @@
-/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles/program.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles/everything.dir
+/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles/currentTest.dir
 /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles/list_install_components.dir

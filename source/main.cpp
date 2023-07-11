@@ -1,26 +1,12 @@
-﻿#include <vector>
-#include <iostream>
-#include "Player.h"
-#include "Game.h"
-#include <chrono>
-#include <thread>
+﻿#include "WindowHandler.h"
 
 int main()
 {
-	Game gra;
-	gra.createGraph();
-	while (gra.getWindowIsOpen())
-	{
-		gra.wyborIlosciGraczy();
-		gra.utworzGre();
-		while (gra.koniecGry() == false)
-		{
-			//Akt
-			gra.update();
-			//Render
-			gra.render();
+    WindowHandler windowHandler;
+    while(windowHandler.getWindowIsOpen())
+    {
+        windowHandler.showMainMenu();
+        sleep(milliseconds(1000));
+    }
 
-		}
-        sf::sleep(sf::milliseconds(10000));
-	}
 }

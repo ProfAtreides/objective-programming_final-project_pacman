@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/paro/CLionProjects/objective-programming_final-project_
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/program.dir/all
+all: CMakeFiles/everything.dir/all
+all: CMakeFiles/currentTest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/program.dir/clean
+clean: CMakeFiles/everything.dir/clean
+clean: CMakeFiles/currentTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/program.dir
+# Target rules for target CMakeFiles/everything.dir
 
 # All Build rule for target.
-CMakeFiles/program.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target program"
-.PHONY : CMakeFiles/program.dir/all
+CMakeFiles/everything.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12 "Built target everything"
+.PHONY : CMakeFiles/everything.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/program.dir/rule: cmake_check_build_system
+CMakeFiles/everything.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/program.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/everything.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/program.dir/rule
+.PHONY : CMakeFiles/everything.dir/rule
 
 # Convenience name for target.
-program: CMakeFiles/program.dir/rule
-.PHONY : program
+everything: CMakeFiles/everything.dir/rule
+.PHONY : everything
 
 # clean rule for target.
-CMakeFiles/program.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/clean
-.PHONY : CMakeFiles/program.dir/clean
+CMakeFiles/everything.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/everything.dir/build.make CMakeFiles/everything.dir/clean
+.PHONY : CMakeFiles/everything.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/currentTest.dir
+
+# All Build rule for target.
+CMakeFiles/currentTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target currentTest"
+.PHONY : CMakeFiles/currentTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/currentTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/currentTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/currentTest.dir/rule
+
+# Convenience name for target.
+currentTest: CMakeFiles/currentTest.dir/rule
+.PHONY : currentTest
+
+# clean rule for target.
+CMakeFiles/currentTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/currentTest.dir/build.make CMakeFiles/currentTest.dir/clean
+.PHONY : CMakeFiles/currentTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

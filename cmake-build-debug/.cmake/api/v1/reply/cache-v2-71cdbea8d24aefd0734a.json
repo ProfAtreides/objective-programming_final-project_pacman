@@ -931,7 +931,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "program"
+			"value" : "currentTest"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1282,6 +1282,150 @@
 			"value" : "TRUE"
 		},
 		{
+			"name" : "all_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug"
+		},
+		{
+			"name" : "all_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "all_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman"
+		},
+		{
+			"name" : "currentTest_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug"
+		},
+		{
+			"name" : "currentTest_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "currentTest_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman"
+		},
+		{
+			"name" : "everything_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug"
+		},
+		{
+			"name" : "everything_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "everything_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman"
+		},
+		{
+			"name" : "justGame_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug"
+		},
+		{
+			"name" : "justGame_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "justGame_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman"
+		},
+		{
 			"name" : "objective_programming_final_project_pacman_BINARY_DIR",
 			"properties" : 
 			[
@@ -1343,6 +1487,42 @@
 		},
 		{
 			"name" : "program_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman"
+		},
+		{
+			"name" : "testing_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug"
+		},
+		{
+			"name" : "testing_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "testing_SOURCE_DIR",
 			"properties" : 
 			[
 				{

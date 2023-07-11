@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=program
+CMAKE_PROJECT_NAME:STATIC=currentTest
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -236,6 +236,42 @@ SFML_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SFML
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
 //Value Computed by CMake
+all_BINARY_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug
+
+//Value Computed by CMake
+all_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+all_SOURCE_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman
+
+//Value Computed by CMake
+currentTest_BINARY_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug
+
+//Value Computed by CMake
+currentTest_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+currentTest_SOURCE_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman
+
+//Value Computed by CMake
+everything_BINARY_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug
+
+//Value Computed by CMake
+everything_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+everything_SOURCE_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman
+
+//Value Computed by CMake
+justGame_BINARY_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug
+
+//Value Computed by CMake
+justGame_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+justGame_SOURCE_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman
+
+//Value Computed by CMake
 objective_programming_final_project_pacman_BINARY_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug
 
 //Value Computed by CMake
@@ -252,6 +288,15 @@ program_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 program_SOURCE_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman
+
+//Value Computed by CMake
+testing_BINARY_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman/cmake-build-debug
+
+//Value Computed by CMake
+testing_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+testing_SOURCE_DIR:STATIC=/home/paro/CLionProjects/objective-programming_final-project_pacman
 
 
 ########################

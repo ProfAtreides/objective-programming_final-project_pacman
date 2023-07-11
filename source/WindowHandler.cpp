@@ -9,7 +9,7 @@ WindowHandler::WindowHandler() {
     this->mVideoMode.height = HEIGHT;
     this->mVideoMode.width = WIDTH;
     this->mWindow =  new RenderWindow(this->mVideoMode,"Dual of Pacs", Style::Titlebar | Style::Close);
-    this->mFont.loadFromFile("arial.ttf");
+    this->mFont.loadFromFile("../resources/arial.ttf");
     this->mText.setFillColor(sf::Color::White);
     this->mText.setFont(mFont);
     this->mText.setCharacterSize(20);
